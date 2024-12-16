@@ -53,11 +53,13 @@ export interface Candidate {
     //Notes
 }
 
+export type ApplicationStatus = "active" | "rejected" | "offered";
+
 export interface Application {
     roleId: string;
     candidateId: string;
     rationale: string;
-    status: "active" | "rejected" | "offered";
+    status: ApplicationStatus;
     // applicationTime: number;
     stageId: string;
 }

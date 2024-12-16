@@ -1,7 +1,5 @@
 "use client";
-import {
-    TagsOutlined
-} from "@ant-design/icons";
+import { TagsOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import { useRouter } from "next/navigation";
