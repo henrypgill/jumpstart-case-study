@@ -14,7 +14,8 @@ export default function Roles() {
     const roles = useAppSelector((state) => state.roles);
     const router = useRouter();
     const [selectedApplicants, setSelectedApplicants] = useState<string[]>([]);
-    const [applicationStatusFilter, setApplicationStatusFilter] = useState<ApplicationStatus | null>("active")
+    const [applicationStatusFilter, setApplicationStatusFilter] =
+        useState<ApplicationStatus | null>("active");
     const [selectedRoleId, setSelectedRoleId] = useState<string>(roles[0].id);
 
     const handleRoleChange = (value: string) => setSelectedRoleId(value);
@@ -32,21 +33,20 @@ export default function Roles() {
         }
     }
 
-    function onAppStatusFilterChange(status: "Active" | "Rejected" | "All" ) {
-        console.log(status)
+    function onAppStatusFilterChange(status: "Active" | "Rejected" | "All") {
+        console.log(status);
         switch (status) {
             case "Active":
-                setApplicationStatusFilter("active")
+                setApplicationStatusFilter("active");
                 break;
             case "Rejected":
-                setApplicationStatusFilter("rejected")
+                setApplicationStatusFilter("rejected");
                 break;
             case "All":
-                setApplicationStatusFilter(null)
+                setApplicationStatusFilter(null);
                 break;
         }
     }
-
 
     function onCheckAll(ids: string[]) {
         setSelectedApplicants(ids);
@@ -72,7 +72,11 @@ export default function Roles() {
                 <Segmented<string>
                     options={["Active", "Rejected", "All"]}
                     // value={applicationStatusFilter ?? "All"}
-                    onChange={(value) => {onAppStatusFilterChange(value as "Active" | "Rejected" | "All")}}
+                    onChange={(value) => {
+                        onAppStatusFilterChange(
+                            value as "Active" | "Rejected" | "All"
+                        );
+                    }}
                 />
                 <Popover content={content} title="Title">
                     <Button disabled={selectedApplicants.length < 1}>

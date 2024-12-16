@@ -21,7 +21,7 @@ export interface ApplicationsTableProps {
     selectedApplicants: string[];
     onSelectApplicant: (id: string) => void;
     onCheckAll: (ids: string[]) => void;
-    applicantStatusFilter: ApplicationStatus | null
+    applicantStatusFilter: ApplicationStatus | null;
 }
 
 function ApplicationsTable({
@@ -29,7 +29,7 @@ function ApplicationsTable({
     selectedApplicants,
     onSelectApplicant,
     onCheckAll,
-    applicantStatusFilter
+    applicantStatusFilter,
 }: ApplicationsTableProps) {
     const applications = useAppSelector((state) => state.applications);
     const roles = useAppSelector((state) => state.roles);
@@ -38,14 +38,15 @@ function ApplicationsTable({
 
     const data: TableData = applications
         .filter((a) => a.roleId === selectedRoleId)
-        .filter((a) => {if (applicantStatusFilter === "active") {
-                return a.status === "active"
+        .filter((a) => {
+            if (applicantStatusFilter === "active") {
+                return a.status === "active";
             } else if (applicantStatusFilter === "rejected") {
-                return a.status === "rejected"
+                return a.status === "rejected";
             } else if (applicantStatusFilter === "offered") {
-                return a.status === "offered"
+                return a.status === "offered";
             } else {
-                return true
+                return true;
             }
         })
         .map((a) => {
@@ -158,27 +159,20 @@ function ApplicationsTable({
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             render: (_, applicant) => (
                 <>
-                {   applicant.status ===  "rejected" || applicant.status === "offered" ?
-                (
-                    <Text>
-                        {applicant.status}
-                    </Text>
-                )
-                :
-                    (
-                        
-                        
+                    {applicant.status === "rejected" ||
+                    applicant.status === "offered" ? (
+                        <Text>{applicant.status}</Text>
+                    ) : (
                         <div className="flex flex-row gap-x-2">
-                        <Button variant="outlined">Progress</Button>
-                        <Button color="danger" variant="outlined">
-                        Reject
-                        </Button>
-                        <Button color="primary" variant="outlined">
-                        Offer
-                        </Button>
+                            <Button variant="outlined">Progress</Button>
+                            <Button color="danger" variant="outlined">
+                                Reject
+                            </Button>
+                            <Button color="primary" variant="outlined">
+                                Offer
+                            </Button>
                         </div>
-                    )
-                }
+                    )}
                 </>
             ),
         },
