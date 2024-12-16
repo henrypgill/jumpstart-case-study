@@ -156,7 +156,6 @@ function ApplicationsTable({
             title: "Action",
             dataIndex: "action",
             key: "action",
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             render: (_, applicant) => (
                 <>
                     {applicant.status === "rejected" ||
@@ -177,7 +176,7 @@ function ApplicationsTable({
             ),
         },
         {
-            title: "View",
+            // title: "View",
             dataIndex: "view",
             key: "view",
             align: "center",
