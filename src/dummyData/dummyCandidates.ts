@@ -16,7 +16,7 @@ const rachel: Candidate = {
             result: "1st Class",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     professional: [
         {
             role: "Programme & Strategy Lead",
@@ -50,7 +50,7 @@ const alex: Candidate = {
             result: "2:1",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     professional: [
         {
             role: "Software Constulant",
@@ -88,7 +88,7 @@ const sophie: Candidate = {
             result: "1st",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     professional: [
         {
             role: "Sales Associate",
@@ -122,7 +122,7 @@ const james: Candidate = {
             result: "Distinction",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     professional: [
         {
             role: "Marketing Manager",
@@ -156,7 +156,7 @@ const anna: Candidate = {
             result: "1st Class",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     technical: {
         github: "https://github.com/alexcarter",
         languages: ["Java"],
@@ -194,7 +194,7 @@ const ellie: Candidate = {
             result: "1st",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     professional: [
         {
             role: "Software Constulant",
@@ -232,7 +232,7 @@ const camilla: Candidate = {
             result: "2:1",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     professional: [
         {
             role: "Sales Associate",
@@ -266,7 +266,7 @@ const roberto: Candidate = {
             result: "Distinction",
         },
     ],
-    photo: "",
+    photo: "/dummy.png",
     professional: [
         {
             role: "Marketing Manager",
