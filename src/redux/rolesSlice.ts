@@ -1,7 +1,6 @@
 import { dummyRoles } from "@/dummyData";
 import { createSlice } from "@reduxjs/toolkit";
 
-
 export const rolesSlice = createSlice({
     name: "applications",
     initialState: dummyRoles,

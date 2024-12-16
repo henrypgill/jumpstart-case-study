@@ -1,6 +1,5 @@
 import { Role } from "@/types";
 
-
 const fa: Role = {
     id: "1",
     title: "Founder's Associate",
@@ -9,26 +8,25 @@ const fa: Role = {
         {
             id: "1",
             title: "Intro Interview",
-            description: ""
+            description: "",
         },
         {
             id: "2",
             title: "Case Study",
-            description: ""
+            description: "",
         },
         {
             id: "3",
             title: "Case Study Review",
-            description: ""
+            description: "",
         },
         {
             id: "4",
             title: "Founder Interview",
-            description: ""
+            description: "",
         },
-    ]
-}
-
+    ],
+};
 
 const eng: Role = {
     id: "2",
@@ -38,31 +36,30 @@ const eng: Role = {
         {
             id: "1",
             title: "Intro Interview",
-            description: ""
+            description: "",
         },
         {
             id: "2",
             title: "Coding Challenge",
-            description: ""
+            description: "",
         },
         {
             id: "3",
             title: "Coding Challenge Review",
-            description: ""
+            description: "",
         },
         {
             id: "4",
             title: "Engeering Interview",
-            description: ""
+            description: "",
         },
         {
             id: "5",
             title: "Founder Interview",
-            description: ""
+            description: "",
         },
-    ]
-}
-
+    ],
+};
 
 const growth: Role = {
     id: "3",
@@ -72,19 +69,19 @@ const growth: Role = {
         {
             id: "1",
             title: "Interview 1",
-            description: ""
+            description: "",
         },
         {
             id: "2",
             title: "Interview 2",
-            description: ""
+            description: "",
         },
         {
             id: "3",
             title: "Interview 3",
-            description: ""
+            description: "",
         },
-    ]
-}
+    ],
+};
 
-export const dummyRoles = [fa, eng, growth]
+export const dummyRoles = [fa, eng, growth];

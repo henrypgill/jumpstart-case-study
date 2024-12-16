@@ -1,7 +1,6 @@
 import { dummyApplications } from "@/dummyData";
 import { createSlice } from "@reduxjs/toolkit";
 
-
 export const applicationsSlice = createSlice({
     name: "applications",
     initialState: dummyApplications,

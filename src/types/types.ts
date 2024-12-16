@@ -1,24 +1,22 @@
-interface WorkExperience{
-
-    role: string;//(1) Work Experience Role (from Candidate)
-    company: string;//(1) Work Experience Company (from Candidate)
-    description: string;//(1) Work Experience Description (from Candidate)
-    duration: string;//(1) Time spent in work experience (from Candidate)
+interface WorkExperience {
+    role: string; //(1) Work Experience Role (from Candidate)
+    company: string; //(1) Work Experience Company (from Candidate)
+    description: string; //(1) Work Experience Description (from Candidate)
+    duration: string; //(1) Time spent in work experience (from Candidate)
 }
 
 interface TechnicalProfile {
-    github: string;//Github RAW (from Candidate)
-    languages: string[];//Coding languages new (from Candidate)
+    github: string; //Github RAW (from Candidate)
+    languages: string[]; //Coding languages new (from Candidate)
     // technologies: string[];
 }
 
 interface Education {
-    classification: string;    //Undergrad degree type (from Candidate)
-    subject: string;     //Undergrad subject (from Candidate)
-    university: string;    //Undergrad university (from Candidate)
+    classification: string; //Undergrad degree type (from Candidate)
+    subject: string; //Undergrad subject (from Candidate)
+    university: string; //Undergrad university (from Candidate)
     graduationYear: number; //Undergrad graduation year (from Candidate)
-    result: string;//"3" | "2:2" | "2:1" | "1"; //Undergrad result (from Candidate)
-
+    result: string; //"3" | "2:2" | "2:1" | "1"; //Undergrad result (from Candidate)
 }
 
 // interface CandidatePreferences {
@@ -30,17 +28,17 @@ interface Education {
 
 export interface Candidate {
     id: string;
-    email: string,    //Candidate
-    name: string,    //Candidate Full Name
+    email: string; //Candidate
+    name: string; //Candidate Full Name
     cv: string; //CV RAW (from Candidate)
-    stream: string,    //Jumpstart selection stream
+    stream: string; //Jumpstart selection stream
     // rightToWork: string,    //Right to Work
-    linkedIn: string,    //LinkedIn RAW (from Candidate)
-    education: Education[]
+    linkedIn: string; //LinkedIn RAW (from Candidate)
+    education: Education[];
     photo: string; //Photo (from Candidate)
-    professional: WorkExperience[]
-    technical?: TechnicalProfile
-    notes: string[]
+    professional: WorkExperience[];
+    technical?: TechnicalProfile;
+    notes: string[];
     // preferences: CandidatePreferences;
     // achievement: string;//Top achievement (from Candidate)
     // languages: string//Languages (from Candidate)

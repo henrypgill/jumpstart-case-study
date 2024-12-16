@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import {
     BellOutlined,
@@ -14,19 +14,16 @@ import "./App.css";
 import "./globals.css";
 import AppMenu from "./menu";
 
-
-
 function AppContainer({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-
     const [collapsed, setCollapsed] = useState(false);
     const {
         token: { colorBgContainer },
     } = theme.useToken();
-  
+
     return (
         <Layout className="min-h-screen m-0">
             <Sider
@@ -82,14 +79,10 @@ function AppContainer({
                         </div>
                     </div>
                 </Header>
-                <Content>
-        {children}
-
-                </Content>
+                <Content>{children}</Content>
             </Layout>
         </Layout>
     );
 }
 
-
-export default AppContainer
+export default AppContainer;

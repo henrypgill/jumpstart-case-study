@@ -4,8 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const candidatesSlice = createSlice({
     name: "candidates",
     initialState: dummyCandidates,
-    reducers: {
-    },
+    reducers: {},
 });
 
 export default candidatesSlice.reducer;

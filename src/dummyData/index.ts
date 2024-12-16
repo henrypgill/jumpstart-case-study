@@ -1,3 +1,3 @@
-export * from "./dummyCandidates"
-export * from "./dummyRoles"
-export * from "./dummyApplications"
+export * from "./dummyCandidates";
+export * from "./dummyRoles";
+export * from "./dummyApplications";

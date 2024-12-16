@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import {
     BranchesOutlined,
     PictureOutlined,
@@ -7,7 +7,7 @@ import {
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import { useState } from "react";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -15,13 +15,12 @@ function AppMenu() {
     const [current, setCurrent] = useState("home");
     const [openKeys, setOpenKeys] = useState<string[]>(["labeling"]);
 
-    const router = useRouter()
+    const router = useRouter();
 
     const onMenuClick: MenuProps["onClick"] = (e) => {
         //   console.log('click ', e);
         setCurrent(e.key);
     };
-
 
     const menuItems: MenuItem[] = [
         {
