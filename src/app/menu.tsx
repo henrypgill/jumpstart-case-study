@@ -1,13 +1,11 @@
 "use client";
 import {
-    BranchesOutlined,
-    PictureOutlined,
-    TagsOutlined,
+    TagsOutlined
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
-import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -29,12 +27,12 @@ function AppMenu() {
             icon: <TagsOutlined />,
             onClick: () => router.push("/roles"),
         },
-        {
-            label: "Candidates",
-            key: "candidates",
-            icon: <TagsOutlined />,
-            onClick: () => router.push("/candidates"),
-        },
+        // {
+        //     label: "Candidates",
+        //     key: "candidates",
+        //     icon: <TagsOutlined />,
+        //     onClick: () => router.push("/candidates"),
+        // },
         {
             label: "Applications",
             key: "applications",
