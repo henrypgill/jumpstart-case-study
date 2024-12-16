@@ -11,7 +11,7 @@ const app1: Application = {
     roleId: "2",
     candidateId: "2",
     rationale: rationales[1],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 10,
+    status: "rejected",
     stageId: "1",
 };
 
@@ -19,7 +19,7 @@ const app2: Application = {
     roleId: "2",
     candidateId: "5",
     rationale: rationales[2],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 24,
+    status: "active",
     stageId: "2",
 };
 
@@ -27,7 +27,7 @@ const app3: Application = {
     roleId: "2",
     candidateId: "6",
     rationale: rationales[3],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 2 * 24,
+    status: "active",
     stageId: "3",
 };
 
@@ -35,7 +35,7 @@ const app4: Application = {
     roleId: "1",
     candidateId: "2",
     rationale: rationales[4],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 3 * 24,
+    status: "active",
     stageId: "2",
 };
 
@@ -43,7 +43,7 @@ const app5: Application = {
     roleId: "1",
     candidateId: "1",
     rationale: rationales[1],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 4 * 24,
+    status: "rejected",
     stageId: "3",
 };
 
@@ -51,7 +51,7 @@ const app6: Application = {
     roleId: "1",
     candidateId: "3",
     rationale: rationales[2],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 5 * 24,
+    status: "active",
     stageId: "3",
 };
 
@@ -59,7 +59,7 @@ const app7: Application = {
     roleId: "1",
     candidateId: "4",
     rationale: rationales[3],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 6 * 2,
+    status: "active",
     stageId: "3",
 };
 
@@ -67,7 +67,7 @@ const app8: Application = {
     roleId: "2",
     candidateId: "7",
     rationale: rationales[4],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 7,
+    status: "rejected",
     stageId: "2",
 };
 
@@ -75,7 +75,7 @@ const app9: Application = {
     roleId: "3",
     candidateId: "7",
     rationale: rationales[1],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 8,
+    status: "active",
     stageId: "2",
 };
 
@@ -83,7 +83,7 @@ const app10: Application = {
     roleId: "3",
     candidateId: "8",
     rationale: rationales[2],
-    // applicationTime: Date.now() - 1000 * 60 * 60 * 9,
+    status: "active",
     stageId: "3",
 };
 

@@ -57,6 +57,7 @@ export interface Application {
     roleId: string;
     candidateId: string;
     rationale: string;
+    status: "active" | "rejected" | "offered";
     // applicationTime: number;
     stageId: string;
 }
