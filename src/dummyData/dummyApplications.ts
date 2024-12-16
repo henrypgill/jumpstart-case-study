@@ -90,7 +90,7 @@ const app10: Application = {
 
 
 
-export const applications: Application[] = [
+export const dummyApplications: Application[] = [
 app1,
 app2,
 app3,
