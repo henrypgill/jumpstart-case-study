@@ -57,7 +57,7 @@ export interface Application {
     roleId: string;
     candidateId: string;
     rationale: string;
-    applicationTime: number;
+    // applicationTime: number;
     stageId: string;
 }
 
