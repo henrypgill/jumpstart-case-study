@@ -7,14 +7,14 @@ import ApplicantPreviewModal from "./ApplicantPreviewModal";
 
 const { Text } = Typography;
 
-type TableDataItem = Candidate &
+export type ApplicationsTableDataItem = Candidate &
     Omit<
         Application,
         // | "roleId"
         "candidateId"
         // | "stageId"
     >;
-type TableData = TableDataItem[];
+type TableData = ApplicationsTableDataItem[];
 
 export interface ApplicationsTableProps {
     selectedRoleId: string;
@@ -93,7 +93,7 @@ function ApplicationsTable({
         }
     }
 
-    const columns: TableProps<TableDataItem>["columns"] = [
+    const columns: TableProps<ApplicationsTableDataItem>["columns"] = [
         {
             title: () => (
                 <Checkbox
@@ -192,13 +192,13 @@ function ApplicationsTable({
         <>
             {selectedApplicantId && (
                 <ApplicantPreviewModal
-                    candidateId={selectedApplicantId}
+                    applicant={data.find(d => d.id === selectedApplicantId)!}
                     visible={previewModalVisible}
                     onOk={onOk}
                     onCancel={onCancel}
                 />
             )}
-            <Table<TableDataItem>
+            <Table<ApplicationsTableDataItem>
                 // rowSelection={{ type: "checkbox", ...rowSelection }}
                 dataSource={data}
                 columns={columns}

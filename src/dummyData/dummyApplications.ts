@@ -34,7 +34,7 @@ const app3: Application = {
 const app4: Application = {
     roleId: "1",
     candidateId: "2",
-    rationale: rationales[4],
+    rationale: rationales[0],
     status: "active",
     stageId: "2",
 };
@@ -66,7 +66,7 @@ const app7: Application = {
 const app8: Application = {
     roleId: "2",
     candidateId: "7",
-    rationale: rationales[4],
+    rationale: rationales[0],
     status: "rejected",
     stageId: "2",
 };
